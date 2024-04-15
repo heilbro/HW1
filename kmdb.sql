@@ -118,6 +118,10 @@ DROP TABLE Actors;
 DROP TABLE Roles;
 DROP TABLE Studios;
 
+CREATE TABLE Studios (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+ name TEXT
+ );
 
 
 CREATE TABLE Movies (
@@ -141,12 +145,38 @@ CREATE TABLE Roles (
     role_played TEXT
   );
 
+  
+
 -- ***note from office hours*** ^^^ = combining info for roles
 
 
 -- Insert data into your database that reflects the sample data shown above
 -- Use hard-coded foreign key IDs when necessary
 -- TODO!
+
+INSERT INTO Studios (
+ name 
+)
+VALUES (
+ "Warner Bros."
+);
+
+INSERT INTO Movies (
+ Title,
+ Rating,
+ Year_Released,
+ studio_id
+)
+
+VALUES (
+  "Batman Begins",
+  "PG-13",
+  "2005",
+  1
+  --qoutes are the names we using, 1 = Warner Bros.
+);
+
+
 
 -- Prints a header for the movies output
 .print "Movies"
