@@ -152,7 +152,7 @@ CREATE TABLE Roles (
 
 -- Insert data into your database that reflects the sample data shown above
 -- Use hard-coded foreign key IDs when necessary
--- TODO!
+-- TODO! 
 
 INSERT INTO Studios (
  name 
@@ -199,9 +199,57 @@ VALUES (
   --******qoutes are the names we using, 1 = Warner Bros.
 --**** (in terminal) SELECT * FROM Movies will show progress of work
 
+INSERT INTO Actors (
+    first_last
+) VALUES ("Christian Bale");
+
+INSERT INTO Actors (
+    first_last
+) VALUES ("Michael Caine");
+
+INSERT INTO Actors (
+    first_last
+) VALUES ("Liam Neeson");
+
+INSERT INTO Actors (
+    first_last
+) VALUES ("Katie Holmes");
+
+INSERT INTO Actors (
+    first_last
+) VALUES ("Gary Oldman");
+
+INSERT INTO Actors (
+    first_last
+) VALUES ("Heath Ledger");
+
+INSERT INTO Actors (
+    first_last
+) VALUES ("Aaron Eckhart");
+
+INSERT INTO Actors (
+    first_last
+) VALUES ("Maggie Gyllenhaal");
+
+INSERT INTO Actors (
+    first_last
+) VALUES ("Tom Hardy");
+
+INSERT INTO Actors (
+    first_last
+) VALUES ("Joseph Gordon-Levitt");
+
+INSERT INTO Actors (
+    first_last
+) VALUES ("Anne Hathaway");
 
 
 
+INSERT INTO Roles (
+    Actor_id,
+    Movie_id,
+    role_played 
+) VALUES ();
 
 -- Prints a header for the movies output
 .print "Movies"
