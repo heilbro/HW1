@@ -152,7 +152,7 @@ CREATE TABLE Roles (
 
 -- Insert data into your database that reflects the sample data shown above
 -- Use hard-coded foreign key IDs when necessary
--- TODO! 
+-- TODO! Done 04.14.24
 
 INSERT INTO Studios (
  name 
@@ -350,8 +350,17 @@ INSERT INTO Roles (
 -- The SQL statement for the movies output
 -- TODO!
 
-SELECT * FROM Movies;
+SELECT Movies.Title, Movies.Year_Released, Movies.Rating, Studios.Name
+FROM Movies
+INNER JOIN Studios ON Studios.id = Movies.studio_id;
+---Good to go!
 
+
+--movies.title = the column where title is from
+--Studios.name made the text come up instead of integer
+
+
+--GROUP BY listings.neighborhood;
 -- Prints a header for the cast output
 .print ""
 .print "Top Cast"
@@ -361,6 +370,10 @@ SELECT * FROM Movies;
 
 
 -- The SQL statement for the cast output
--- TODO!
-SELECT * FROM Roles;
+-- TODO! 04.14.2024
+
+SELECT Movies.Title, Actors.first_last, Roles.role_played
+FROM Movies
+INNER JOIN Roles ON Roles.Movie_id = Movies.id
+INNER JOIN Actors ON Actors.id = Roles.Actor_id;
 
