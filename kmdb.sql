@@ -140,8 +140,8 @@ CREATE TABLE Actors (
 
 CREATE TABLE Roles (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-    Actor_id INTEGER,
     Movie_id INTEGER,
+    Actor_id INTEGER,
     role_played TEXT
   );
 
@@ -245,11 +245,102 @@ INSERT INTO Actors (
 
 
 
+--Do this for all 15 Roles: Hint (11 Actors)
 INSERT INTO Roles (
-    Actor_id,
     Movie_id,
+    Actor_id,
     role_played 
-) VALUES ();
+) VALUES (1,1,"Bruce Wayne");
+
+INSERT INTO Roles (
+    Movie_id,
+    Actor_id,
+    role_played 
+) VALUES (1,2,"Alfred");
+
+INSERT INTO Roles (
+    Movie_id,
+    Actor_id,
+    role_played 
+) VALUES (1,3,"Ra's Al Ghul");
+
+INSERT INTO Roles (
+    Movie_id,
+    Actor_id,
+    role_played 
+) VALUES (1,4,"Rachel Dawes");
+
+INSERT INTO Roles (
+    Movie_id,
+    Actor_id,
+    role_played 
+) VALUES (1,5,"Commissioner Gordon");
+
+
+--Dark Knight****
+INSERT INTO Roles (
+    Movie_id,
+    Actor_id,
+    role_played 
+) VALUES (2,1,"Bruce Wayne");
+
+
+INSERT INTO Roles (
+    Movie_id,
+    Actor_id,
+    role_played 
+) VALUES (2,6,"Joker");
+
+INSERT INTO Roles (
+    Movie_id,
+    Actor_id,
+    role_played 
+) VALUES (2,7,"Harvey Dent");
+
+INSERT INTO Roles (
+    Movie_id,
+    Actor_id,
+    role_played 
+) VALUES (2,2,"Alfred");
+
+INSERT INTO Roles (
+    Movie_id,
+    Actor_id,
+    role_played 
+) VALUES (2,8,"Rachel Dawes");
+
+--Dark Night Rises ***
+
+INSERT INTO Roles (
+    Movie_id,
+    Actor_id,
+    role_played 
+) VALUES (3,1,"Bruce Wayne");
+
+INSERT INTO Roles (
+    Movie_id,
+    Actor_id,
+    role_played 
+) VALUES (3,5,"Commissioner Gordon");
+
+INSERT INTO Roles (
+    Movie_id,
+    Actor_id,
+    role_played 
+) VALUES (3,9,"Bane");
+
+INSERT INTO Roles (
+    Movie_id,
+    Actor_id,
+    role_played 
+) VALUES (3,10,"John Blake");
+
+INSERT INTO Roles (
+    Movie_id,
+    Actor_id,
+    role_played 
+) VALUES (3,11,"Selina Kyle");
+
 
 -- Prints a header for the movies output
 .print "Movies"
@@ -259,6 +350,8 @@ INSERT INTO Roles (
 -- The SQL statement for the movies output
 -- TODO!
 
+SELECT * FROM Movies;
+
 -- Prints a header for the cast output
 .print ""
 .print "Top Cast"
@@ -266,5 +359,8 @@ INSERT INTO Roles (
 .print ""
 
 
+
 -- The SQL statement for the cast output
 -- TODO!
+SELECT * FROM Roles;
+
