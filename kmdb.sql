@@ -148,7 +148,7 @@ CREATE TABLE Roles (
   
 
 -- ***note from office hours*** ^^^ = combining info for roles
-
+--
 
 -- Insert data into your database that reflects the sample data shown above
 -- Use hard-coded foreign key IDs when necessary
@@ -167,14 +167,39 @@ INSERT INTO Movies (
  Year_Released,
  studio_id
 )
-
 VALUES (
   "Batman Begins",
   "PG-13",
   "2005",
-  1
-  --qoutes are the names we using, 1 = Warner Bros.
-);
+  1 );
+
+  INSERT INTO Movies (
+ Title,
+ Rating,
+ Year_Released,
+ studio_id
+)
+VALUES (
+  "The Dark Knight",
+  "PG-13",
+  "2008",
+  1 );
+
+  INSERT INTO Movies (
+ Title,
+ Rating,
+ Year_Released,
+ studio_id
+)
+VALUES (
+  "The Dark Knight Rises",
+  "PG-13",
+  "2012",
+  1 );
+  --******qoutes are the names we using, 1 = Warner Bros.
+--**** (in terminal) SELECT * FROM Movies will show progress of work
+
+
 
 
 
