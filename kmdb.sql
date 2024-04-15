@@ -111,7 +111,8 @@
 .headers off
 
 -- Drop existing tables, so you'll start fresh each time this script is run.
--- TODO!.
+--Create new tables, according to your domain model
+--  ***completed 04.14.24
 DROP TABLE Movies;
 DROP TABLE Actors;
 DROP TABLE Roles;
@@ -129,27 +130,20 @@ CREATE TABLE Movies (
 
 CREATE TABLE Actors (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
- first_last TEXT,
- role_played TEXT 
+ first_last TEXT
  );
 
 
 CREATE TABLE Roles (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
     Actor_id INTEGER,
-    Movie_id INTEGER
+    Movie_id INTEGER,
+    role_played TEXT
   );
 
 -- ***note from office hours*** ^^^ = combining info for roles
 
--- Create new tables, according to your domain model
--- TODO!
-CREATE TABLE salespeople (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  first_name TEXT,
-  last_name TEXT,
-  email TEXT
-);
+
 -- Insert data into your database that reflects the sample data shown above
 -- Use hard-coded foreign key IDs when necessary
 -- TODO!
